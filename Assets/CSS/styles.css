@@ -2,7 +2,7 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: center;
-   margin-left: auto;
+    margin-left: auto;
     width: 100%;
     margin-right: auto;
 
@@ -15,7 +15,7 @@ html,body {
     justify-content: center;
 }
 
-.start{
+.start-button{
     margin-left: 150;
     background-color: orangered;
   border: none;
@@ -25,4 +25,12 @@ html,body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
 }

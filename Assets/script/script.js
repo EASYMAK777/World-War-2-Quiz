@@ -5,4 +5,6 @@ var questionObject = {
   fourthQuestion: "Which countries made up the Axis powers?",
 };
 
+var correctAnswers = {};
+
 console.log(questionObject);
