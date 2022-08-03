@@ -6,6 +6,7 @@ html,body {
     width: 100%;
     margin-right: auto;
     text-align: center;
+    
 
 }
 
@@ -37,4 +38,11 @@ html,body {
     width: 500px;
     margin: auto;
     
+}
+
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
