@@ -39,10 +39,3 @@ html,body {
     margin: auto;
     
 }
-
-.heading{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
