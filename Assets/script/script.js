@@ -7,4 +7,4 @@ var questionObject = {
 
 var correctAnswers = {};
 
-console.log(questionObject);
+// console.log(questionObject);
