@@ -31,19 +31,35 @@ var questionArray = [
 
 // TIMER
 
-// var timeEl = document.querySelector(".timer");
-// var mainEl = document.getElementById(".container");
+var timeEl = document.querySelector(".timer");
+var mainEl = document.getElementById(".container");
 
-// var timeLeft = 30;
+// How much time is left when the timer starts
+var timeLeft = 30;
 
-// function setTime() {
-//   var timerInterval = setInterval(function () {
-//     secondsLeft--;
-//     timeEl.textContent = secondsLeft + "seconds till game end";
+// Function used to display how much time is left on screen
+function setTime() {
+  var timerInterval = setInterval(function () {
+    // This allows it to display whatever time thats in the variable on line 38
+    secondsLeft--;
+    // displays a div with a string and the time
+    timeEl.textContent = secondsLeft + "seconds till game end";
+    // Displays a message after timer hits 0
+    if (secondsLeft === 0) {
+      clearInterval(timerInterval);
+      sendMessage();
+    }
+  }, 1000);
+}
 
-//     if (secondsLeft === 0) {
-//       clearInterval(timerInterval);
-//       sendMessage();
-//     }
-//   }, 1000);
-// }
+// Function to display players score in a div
+function displayScore() {
+  // creates a text Element
+  timeEl.textContent = "";
+  // Replaces questions with original image after timer ends
+  var imgEl = document.createElement("img");
+  imgEl.setAttribute("src", "/Assets/img/soldier.png");
+  mainEl.appendChild(imgEl);
+}
+// Calling the function above
+setTime();
