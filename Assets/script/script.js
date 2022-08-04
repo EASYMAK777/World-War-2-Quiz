@@ -1,6 +1,6 @@
 var questionDiv = document.getElementById("questionDiv");
 var questionDiv = document.querySelector("questionDiv");
-var imgEl = document.querySelectorAll("img");
+var imgEl = document.querySelectorAll(".image");
 
 var questionObject = {
   firstQuestion: "What year did World War 1 Start?",
@@ -14,3 +14,24 @@ var questionObject = {
 // console.log(questionObject);
 // console.log(imgEl);
 // console.log(questionDiv);
+
+var questionArray = [
+  {
+    element: questionDiv,
+    title: "firstQuestion",
+    answer: "July 28, 1914",
+  },
+];
+
+// APPEND?
+// for (var i = 0; i < questionArray.length; i++) {}
+
+// RENDERQUESTION
+// function renderQuestion()
+
+// TIMER
+
+var timeEl = document.querySelector(".timer");
+var mainEl = document.getElementById(".container");
+
+var timeLeft = 30;
