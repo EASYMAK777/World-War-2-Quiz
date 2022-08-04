@@ -31,7 +31,19 @@ var questionArray = [
 
 // TIMER
 
-var timeEl = document.querySelector(".timer");
-var mainEl = document.getElementById(".container");
+// var timeEl = document.querySelector(".timer");
+// var mainEl = document.getElementById(".container");
 
-var timeLeft = 30;
+// var timeLeft = 30;
+
+// function setTime() {
+//   var timerInterval = setInterval(function () {
+//     secondsLeft--;
+//     timeEl.textContent = secondsLeft + "seconds till game end";
+
+//     if (secondsLeft === 0) {
+//       clearInterval(timerInterval);
+//       sendMessage();
+//     }
+//   }, 1000);
+// }
