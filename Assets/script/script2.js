@@ -32,4 +32,28 @@ function endGame() {
   console.log("Game End");
 }
 
-///////////////////////////////////////TIMER THAT COUNTS DOWN WHEN BUTTON IS CLICKED AND TIME IS DISPLAYED?
+///////////////////////////////////////QUESTION DIV///////////////////////////////////////////////////
+//////////////////////////////THIS DIV SHOULD DISPLAY QUESTIONS, AND ANSWER CHOICES, WHEN USER CLICKS CHOICE THE GAME LOGIC SHOULD DETERMINE IF THE /////////
+////////////////////////////(CONT) USER CHOICE WAS CORRECT OR INCORRECT, SWITCH TO NEXT QUESTION//////////////////////
+
+var questionDiv = document.querySelector("#questionDiv");
+var questionDiv = document.getElementById("questionDiv");
+
+// Question Object  || array?//
+var questions = [
+  {
+    questionOne: "what year did world war 2 start?",
+    questionOneChoices: {
+      a: 1123,
+      b: 2077,
+      c: 1933,
+      d: 1820,
+      question1Correct: "c",
+      question1Incorrect: ["a", "b", "d"],
+    },
+  },
+];
+////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
+//////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
+var playerScore = "";
+var scoreBoard = "";
