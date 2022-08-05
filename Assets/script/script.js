@@ -1,27 +1,23 @@
-var questionDiv = document.getElementById("questionDiv");
-var questionDiv = document.querySelector("questionDiv");
-var imgEl = document.querySelectorAll(".image");
+// var questionDiv = document.getElementById("questionDiv");
+// var questionDiv = document.querySelector("questionDiv");
+// var imgEl = document.querySelectorAll(".image");
 
-var questionObject = {
-  firstQuestion: "What year did World War 1 Start?",
-  secondQuestion: "What year did USA enter World War 2",
-  thirdQuestion: "What was the first country Germany invaded?",
-  fourthQuestion: "Which countries made up the Axis powers?",
-};
-
-// for (var i = 0; i < questionObject.length; i++) {}
+// var questionObject = {
+//   firstQuestion: "What year did World War 1 Start?",
+//   secondQuestion: "What year did USA enter World War 2",
+//   thirdQuestion: "What was the first country Germany invaded?",
+//   fourthQuestion: "Which countries made up the Axis powers?",
+// };
 
 // console.log(questionObject);
-// console.log(imgEl);
-// console.log(questionDiv);
 
-var questionArray = [
-  {
-    element: questionDiv,
-    title: "firstQuestion",
-    answer: "July 28, 1914",
-  },
-];
+// var questionArray = [
+//   {
+//     element: questionDiv,
+//     title: "firstQuestion",
+//     answer: "July 28, 1914",
+//   },
+// ];
 
 // APPEND?
 // for (var i = 0; i < questionArray.length; i++) {}
@@ -29,13 +25,27 @@ var questionArray = [
 // RENDERQUESTION
 // function renderQuestion()
 
-// TIMER
+// Function to display players score in a div
+// function displayScore() {
+//   // creates a text Element
+//   timeEl.textContent = "";
+//   // Replaces questions with original image after timer ends
+//   var imgEl = document.createElement("img");
+//   imgEl.setAttribute("src", "/Assets/img/soldier.png");
+//   mainEl.appendChild(imgEl);
+// }
+// Calling the function above
+// setTime();
+
+// //////////////START BUTTON EVENT LISTENER//////////////////////////////
+
+/////////////////////////////////////////////////////////// TIMER//////////////////////////////////////////////////////
 
 var timeEl = document.querySelector(".timer");
 var mainEl = document.getElementById(".container");
 
 // How much time is left when the timer starts
-var timeLeft = 30;
+var timeLeft = 5;
 
 // Function used to display how much time is left on screen
 function setTime() {
@@ -51,15 +61,3 @@ function setTime() {
     }
   }, 1000);
 }
-
-// Function to display players score in a div
-function displayScore() {
-  // creates a text Element
-  timeEl.textContent = "";
-  // Replaces questions with original image after timer ends
-  var imgEl = document.createElement("img");
-  imgEl.setAttribute("src", "/Assets/img/soldier.png");
-  mainEl.appendChild(imgEl);
-}
-// Calling the function above
-setTime();
