@@ -18,7 +18,7 @@ function setTimerText() {
 }
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
-  console.log(timeLeft);
+  console.log("Game Start");
 
   if (timeLeft < 5) timeLeft--;
   setTimerText();
@@ -28,6 +28,7 @@ startButton.addEventListener("click", function () {
 function endGame() {
   if (timeLeft === 0) questionDiv.textContent = "game over, submit your score";
   timerEl.textContent = "";
+  console.log("Game End");
 }
 
 ///////////////////////////////////////TIMER THAT COUNTS DOWN WHEN BUTTON IS CLICKED AND TIME IS DISPLAYED
