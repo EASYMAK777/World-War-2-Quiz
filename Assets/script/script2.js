@@ -20,7 +20,7 @@ function setTimerText() {
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
   console.log("Game Start");
-
+  displayQuestion();
   if (timeLeft < 5) timeLeft--;
   setTimerText();
 });
@@ -48,11 +48,15 @@ var questions = [
       b: 2077,
       c: 1933,
       d: 1820,
-      question1Correct: "c",
-      question1Incorrect: ["a", "b", "d"],
+      //   question1Correct: "c",
+      //   question1Incorrect: ["a", "b", "d"],
     },
   },
 ];
+// function that displays question when start button is clicked
+function displayQuestion() {
+  console.log(questions[0]);
+}
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
 var playerScore = "";
