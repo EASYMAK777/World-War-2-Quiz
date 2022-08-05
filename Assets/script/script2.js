@@ -1,7 +1,8 @@
-// //////////////////////////////////////////EVENT LISTENER THAT DISPLAYS TIMER IN DIV/////////////////////////////////////////
-var questionDiv = document.querySelector("#questionDiv");
+// //////////////////////////////////////////TIMER, GAME START GAME END/////////////////////////////////////////
+
 var startButton = document.querySelector("#start");
 var timeLeft = 5;
+var imageDiv = document.querySelector("#imageDiv");
 timerEl = document.querySelector("#timerEl");
 // Renders timer element when user clicks start button
 function setTimerText() {
@@ -31,4 +32,4 @@ function endGame() {
   console.log("Game End");
 }
 
-///////////////////////////////////////TIMER THAT COUNTS DOWN WHEN BUTTON IS CLICKED AND TIME IS DISPLAYED
+///////////////////////////////////////TIMER THAT COUNTS DOWN WHEN BUTTON IS CLICKED AND TIME IS DISPLAYED?
