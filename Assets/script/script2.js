@@ -43,6 +43,7 @@ var questionDiv = document.getElementById("questionDiv");
 
 var questionList = [
   {
+    QuestionNumber: 1,
     element: questionDiv,
     title: "Question One",
     question: "What year did WW2 Start",
@@ -57,8 +58,8 @@ var questionList = [
 // function that displays question when start button is clicked
 function displayQuestion() {
   // Display question and choices in questionDiv
-
-  console.log(questions[0]);
+  console.log(questionList[0]);
+  questionDiv.textContent = "Question One";
 }
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
