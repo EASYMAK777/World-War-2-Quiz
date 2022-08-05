@@ -1,5 +1,5 @@
 // //////////////////////////////////////////EVENT LISTENER THAT DISPLAYS TIMER IN DIV/////////////////////////////////////////
-
+var questionDiv = document.querySelector("#questionDiv");
 var startButton = document.querySelector("#start");
 var timeLeft = 5;
 timerEl = document.querySelector("#timerEl");
@@ -26,7 +26,8 @@ startButton.addEventListener("click", function () {
 
 // Ends game when timer expires
 function endGame() {
-  if (timeLeft === 0) timerEl.textContent = "game over, submit your score";
+  if (timeLeft === 0) questionDiv.textContent = "game over, submit your score";
+  timerEl.textContent = "";
 }
 
 ///////////////////////////////////////TIMER THAT COUNTS DOWN WHEN BUTTON IS CLICKED AND TIME IS DISPLAYED
