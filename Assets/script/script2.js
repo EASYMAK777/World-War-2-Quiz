@@ -40,24 +40,27 @@ var questionDiv = document.querySelector("#questionDiv");
 var questionDiv = document.getElementById("questionDiv");
 
 // Question Object  || array?//
-var questions = [
+
+var questionList = [
   {
-    questionOne: "what year did world war 2 start?",
-    questionOneChoices: {
-      a: 1123,
-      b: 2077,
-      c: 1933,
-      d: 1820,
-      //   question1Correct: "c",
-      //   question1Incorrect: ["a", "b", "d"],
+    element: questionDiv,
+    title: "Question One",
+    question: "What year did WW2 Start",
+    choices: {
+      a: 1991,
+      b: 1930,
+      c: 2020,
     },
   },
 ];
+
 // function that displays question when start button is clicked
 function displayQuestion() {
+  // Display question and choices in questionDiv
+
   console.log(questions[0]);
 }
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
-var playerScore = "";
+var playerScore = 0;
 var scoreBoard = "";
