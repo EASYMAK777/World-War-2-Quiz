@@ -20,6 +20,7 @@ function setTimerText() {
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
   console.log("Game Start");
+  //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   displayQuestion();
   if (timeLeft < 5) timeLeft--;
   setTimerText();
@@ -29,6 +30,7 @@ startButton.addEventListener("click", function () {
 function endGame() {
   if (timeLeft === 0) questionDiv.textContent = "game over, submit your score";
   timerEl.textContent = "";
+
   console.log("Game End");
 }
 
@@ -54,12 +56,15 @@ var questionList = [
     },
   },
 ];
-
 // function that displays question when start button is clicked
 function displayQuestion() {
-  // Display question and choices in questionDiv
-  console.log(questionList[0]);
-  questionDiv.textContent = "Question One";
+  questionDiv.textContent = questionList[0];
+
+  //   for (var i = questionList; i < questionList.length; ++i)
+  //     // Display question and choices in questionDiv
+  //     questionList.textContent = 1;
+  //   console.log(questionList[0]);
+  //   //   questionDiv.textContent = "Game Has Started";
 }
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
