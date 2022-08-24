@@ -46,21 +46,25 @@ var questionDiv = document.getElementById("questionDiv");
 var questionList = [
   {
     question: "What year did ww1 start?",
-    answers:[1992,1122,1933, 2023],
-    correctAnswer:1933
-  }
-   
+    answers: [
+      {
+        A: 1992,
+        B: 1122,
+        C: 1933,
+        D: 2023,
+      },
+    ],
+    correctAnswer: C,
+  },
 ];
 // function that displays question when start button is clicked
 function displayQuestion() {
-  questionDiv.textContent = questionList[question];
-  
-  
-  
+  document.getElementById("questionDiv").style.display = "block";
+
   // questionDiv.textContent = questionList;
   //   console.log(questionList[0]);
-
 }
+
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
 var playerScore = 0;
