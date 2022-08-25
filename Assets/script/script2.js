@@ -18,16 +18,19 @@ function setTimerText() {
 }
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
+  renderQuestion();
   console.log("Game Start");
   console.log(questions[0].question);
   console.log(questions[0].choiceA);
   console.log(questions[0].choiceB);
   console.log(questions[0].choiceC);
   console.log(questions[0].choiceD);
-  console.log(questions[0].correct);
+  // console.log(timeLeft);
+  // console.log(questions[0].correct);
   //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   if (timeLeft < 5) timeLeft--;
   setTimerText();
+  //renderQuestion();
   // displayQuestion();
 });
 
@@ -51,7 +54,7 @@ var question = document.getElementById("question");
 
 //Question Object
 
-let questions = [
+var questions = [
   {
     question: "What year did world war 2 start?",
     choiceA: "1933",
@@ -61,3 +64,21 @@ let questions = [
     correct: "A",
   },
 ];
+
+//Render the Question
+var lastQuestionIndex = questions.length - 1;
+var runningQuestionIndex = 0;
+
+function renderQuestion() {
+  let q = questions[runningQuestionIndex];
+  question.innerHTML = "<p>" + q.question + "</p>";
+  choiceA.innerHTML = q.choiceA;
+  choiceB.innerHTML = q.choiceB;
+  choiceC.innerHTML = q.choiceC;
+  choiceD.innerHTML = q.choiceD;
+}
+
+// runningQuestionIndex = 0;
+// renderQuestion();
+// runningQuestionIndex++;
+// renderQuestion();
