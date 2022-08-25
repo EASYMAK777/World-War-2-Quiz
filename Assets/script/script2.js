@@ -34,5 +34,8 @@ function endGame() {
   console.log("Game End");
 }
 
+// var playerScore = 0;
+// var scoreBoard = "";
+
 var playerScore = 0;
 var scoreBoard = "";
