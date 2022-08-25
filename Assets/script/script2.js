@@ -42,3 +42,15 @@ var choiceC = document.getElementById("C");
 var choiceD = document.getElementById("D");
 var scoreBoard = document.getElementById("scoreBoard");
 var question = document.getElementById("question");
+
+//Question Object
+
+let questions = [
+  {
+    question: "What year did world war 2 start?",
+    choiceA: "1933",
+    choiceB: "2020",
+    choiceC: "1920",
+    choiceD: "1885",
+  },
+];
