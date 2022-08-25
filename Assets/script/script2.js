@@ -1,5 +1,4 @@
 // //////////////////////////////////////////TIMER, GAME START GAME END/////////////////////////////////////////
-
 var startButton = document.querySelector("#start");
 var timeLeft = 5;
 var imageDiv = document.querySelector("#imageDiv");
@@ -37,5 +36,9 @@ function endGame() {
 // var playerScore = 0;
 // var scoreBoard = "";
 
-var playerScore = 0;
-var scoreBoard = "";
+var choiceA = document.getElementById("A");
+var choiceB = document.getElementById("B");
+var choiceC = document.getElementById("C");
+var choiceD = document.getElementById("D");
+var scoreBoard = document.getElementById("scoreBoard");
+var question = document.getElementById("question");
