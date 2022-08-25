@@ -42,7 +42,7 @@ function endGame() {
 
 let questionList = [
   {
-    question1: "What year did world war 2 start?",
+    question: "What year did world war 2 start?",
     choiceA: "1999",
     choiceB: "2022",
     choiceC: "1933",
@@ -51,7 +51,8 @@ let questionList = [
   },
 ];
 function displayQuestion() {}
-
+//Console log first question
+console.log(questionList[0].question);
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
 var playerScore = 0;
