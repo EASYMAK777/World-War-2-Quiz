@@ -4,7 +4,7 @@ var timeLeft = 5;
 var imageDiv = document.querySelector("#imageDiv");
 timerEl = document.querySelector("#timerEl");
 // Renders timer element when user clicks start button
-function setTimerText() {
+function startQuiz() {
   var timerInterval = setInterval(function () {
     timeLeft--;
     timerEl.textContent = timeLeft + "seconds till game ends";
@@ -28,7 +28,8 @@ startButton.addEventListener("click", function () {
   // console.log(questions[0].correct);
   //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   if (timeLeft < 5) timeLeft--;
-  setTimerText();
+  startQuiz();
+
   renderQuestion();
   // displayQuestion();
 });
@@ -41,7 +42,6 @@ function endGame() {
   console.log("Game End");
 }
 
-// var playerScore = 0;
 // var scoreBoard = "";
 
 var choiceA = document.getElementById("A");
@@ -66,7 +66,6 @@ var questions = [
 
 //Render the Question
 var lastQuestionIndex = questions.length - 1;
-var runningQuestionIndex = 0;
 
 function renderQuestion() {
   let q = questions[runningQuestionIndex];
@@ -75,9 +74,23 @@ function renderQuestion() {
   choiceB.innerHTML = q.choiceB;
   choiceC.innerHTML = q.choiceC;
   choiceD.innerHTML = q.choiceD;
+  runningQuestionIndex = 0;
 }
 
-// runningQuestionIndex = 0;
-// renderQuestion();
-// runningQuestionIndex++;
-// renderQuestion();
+//Render the answers
+
+//Check if Answer is correct or not
+// var playerScore = 0;
+
+// function checkAnswer(answer) {
+//   if (questions[runningQuestionIndex].correct == answer) {
+//     playerScore + 10;
+//   } else {
+//     answerIsWrong();
+//   }
+//   if (runningQuestionIndex < lastQuestionIndex) {
+//     runningQuestionIndex++;
+//     renderQuestion();
+//   } else {
+//   }
+// }
