@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./Assets/CSS/styles.css">
 </head>
 <body>
-    <main class="container">
+    <main class="container" id="container">
         <header class="heading">
 
             <h1>Super Cool World War Quiz</h1>
@@ -18,15 +18,15 @@
         
 
         <!-- Image of a soldier -->
-        <image>
-            <img id="imageDiv" src="./Assets/img/soldier.png" height="200" width="200" alt="soldier">
+        <div id="timerEl"></div>
+        <image id="imageDiv">
+            <img src="./Assets/img/soldier.png" height="200" width="200" alt="soldier">
         </image>
         <br>
 
-        <article class="questionDiv" id="questionDiv"></article>
-        <article class="answerDiv" id="answerDiv"></article>
+        <article class="questionDiv" id="questionDiv">Question </article>
+        <article class="answerDiv" id="answerDiv">Answers</article>
 
-        <div id="timerEl"></div>
         
 
         <!-- using classes for styling and Handlers -->

@@ -38,34 +38,26 @@ function endGame() {
 //////////////////////////////THIS DIV SHOULD DISPLAY QUESTIONS, AND ANSWER CHOICES, WHEN USER CLICKS CHOICE THE GAME LOGIC SHOULD DETERMINE IF THE /////////
 ////////////////////////////(CONT) USER CHOICE WAS CORRECT OR INCORRECT, SWITCH TO NEXT QUESTION//////////////////////
 
-var questionDiv = document.querySelector("#questionDiv");
-var questionDiv = document.getElementById("questionDiv");
+// function that displays question when start button is clicked
 
-// Question Object  || array?//
-
-var questionList = [
+let questionList = [
   {
-    question: "What year did ww1 start?",
-    answers: [
-      {
-        A: 1992,
-        B: 1122,
-        C: 1933,
-        D: 2023,
-      },
-    ],
-    correctAnswer: C,
+    question1: "What year did world war 2 start?",
+    choiceA: "1999",
+    choiceB: "2022",
+    choiceC: "1933",
+    choiceD: "1776",
+    correct: "C",
   },
 ];
-// function that displays question when start button is clicked
-function displayQuestion() {
-  document.getElementById("questionDiv").style.display = "block";
-
-  // questionDiv.textContent = questionList;
-  //   console.log(questionList[0]);
-}
+function displayQuestion() {}
 
 ////////////////////////////////////////////////////SCORE BOARD//////////////////////////////////////////////////////////
 //////////////////////////////ADDS TO SCOREBOARD OR TAKES AWAY FROM TIME DEPENDING ON USER INPUT////////////////////////////////
 var playerScore = 0;
 var scoreBoard = "";
+
+// for (var i = question; i < questionList.question1; i++) {
+//   var question = questionList.question1;
+//   var answers = questionList.answerChoices;
+// }

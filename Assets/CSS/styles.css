@@ -48,3 +48,8 @@ html,body {
     text-align: center;
 
 }
+
+#timerEl{
+   font-size: 50px;
+   text-transform: capitalize;
+}
