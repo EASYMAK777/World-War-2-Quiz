@@ -52,5 +52,6 @@ let questions = [
     choiceB: "2020",
     choiceC: "1920",
     choiceD: "1885",
+    correct: "A",
   },
 ];
