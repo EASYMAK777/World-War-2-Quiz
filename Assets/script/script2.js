@@ -19,6 +19,7 @@ function setTimerText() {
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
   console.log("Game Start");
+  console.log(questions[0].question);
   //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   if (timeLeft < 5) timeLeft--;
   setTimerText();
