@@ -12,7 +12,7 @@ function setTimerText() {
     if (timeLeft === 0) {
       clearInterval(timerInterval);
       endGame();
-      //   console.log("game over");
+      console.log("game over");
     }
   }, 1000);
 }
@@ -22,12 +22,12 @@ startButton.addEventListener("click", function () {
   //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   if (timeLeft < 5) timeLeft--;
   setTimerText();
-  displayQuestion();
+  // displayQuestion();
 });
 
 // Ends game when timer expires
 function endGame() {
-  if (timeLeft === 0) questionDiv.textContent = "game over, submit your score";
+  if (timeLeft === 0) question.textContent = "game over, submit your score";
   timerEl.textContent = "";
 
   console.log("Game End");
