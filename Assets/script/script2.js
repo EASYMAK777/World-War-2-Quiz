@@ -18,19 +18,18 @@ function setTimerText() {
 }
 // Starts and displays timer text in el
 startButton.addEventListener("click", function () {
-  renderQuestion();
   console.log("Game Start");
-  console.log(questions[0].question);
-  console.log(questions[0].choiceA);
-  console.log(questions[0].choiceB);
-  console.log(questions[0].choiceC);
-  console.log(questions[0].choiceD);
+  // console.log(questions[0].question);
+  // console.log(questions[0].choiceA);
+  // console.log(questions[0].choiceB);
+  // console.log(questions[0].choiceC);
+  // console.log(questions[0].choiceD);
   // console.log(timeLeft);
   // console.log(questions[0].correct);
   //   //////////////////////////////////////////////////////DISPLAYS QUESTION///////////////////////////////////////
   if (timeLeft < 5) timeLeft--;
   setTimerText();
-  //renderQuestion();
+  renderQuestion();
   // displayQuestion();
 });
 
