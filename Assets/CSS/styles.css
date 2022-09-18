@@ -68,9 +68,13 @@ html,body {
     margin: 20px;
 }
 
-/* add styling to the buttons that appear in answers div */
+
+
 #answerChoicesEl button{
-    background-color: orangered;
+    position: relative;
+    margin: 20px;
+
+    background-color: grey;
     border: none;
     color: black;
     padding: 15px 32px;

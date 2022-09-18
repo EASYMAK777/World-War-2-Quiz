@@ -64,7 +64,7 @@ function displayQuestion() {
   //clear answerChoicesEl
   answerChoicesEl.innerHTML = "";
   //display question
-  answerChoicesEl.textContent = questions[0].question;
+  questionEl.textContent = questions[0].question;
   //create button for each answer
   for (i = 0; i < questions[0].answers.length; i++) {
     var answerBtn = document.createElement("button");
