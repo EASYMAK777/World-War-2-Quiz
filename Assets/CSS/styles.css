@@ -50,11 +50,21 @@ html,body {
 
 }
 
-#timerEl{
-    display: block;
-   font-size: 50px;
-   text-transform: capitalize;
-}
+
+
+
+
+
+    #timerEl{
+        /* insert timerEL on top right corner of page */
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 30px;
+        text-align: center;
+        margin: 30px;
+        border-color: black;
+     }
 
 /* style the startBtn */
 .startBtn {
