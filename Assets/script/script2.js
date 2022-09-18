@@ -32,6 +32,7 @@ function startGame() {
   }, 1000);
   //display first question and answers from the array
   displayQuestion();
+  document.getElementById("startBtn").style.display = "none";
 }
 
 //end game function to stop timer and console log "game over"
