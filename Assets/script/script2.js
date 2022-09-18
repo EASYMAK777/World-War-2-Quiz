@@ -30,6 +30,8 @@ function startGame() {
       endGame();
     }
   }, 1000);
+  //display first question and answers from the array
+  displayQuestion();
 }
 
 //end game function to stop timer and console log "game over"
@@ -55,3 +57,28 @@ var questions = [
     correctAnswer: "France",
   },
 ];
+
+//create function to display questions and answers as buttons in answerChoicesEl
+function displayQuestion() {
+  //clear answerChoicesEl
+  answerChoicesEl.innerHTML = "";
+  //display question
+  answerChoicesEl.textContent = questions[0].question;
+  //create button for each answer
+  for (i = 0; i < questions[0].answers.length; i++) {
+    var answerBtn = document.createElement("button");
+    answerBtn.textContent = questions[0].answers[i];
+    answerChoicesEl.appendChild(answerBtn);
+  }
+}
+
+//add styling to answer buttons
+var answerBtns = document.querySelectorAll("button"); //select all buttons
+for (i = 0; i < answerBtns.length; i++) {
+  answerBtns[i].classList.add(
+    "answerBtn",
+    "btn-primary",
+    "btn-lg",
+    "btn-block"
+  );
+}
