@@ -1,8 +1,8 @@
-//get element by id startBtn
-var startBtn = document.getElementById("startBtn");
+//get timerEl from html
+var timerEl = document.getElementById("timeLeft");
 
-//console.log(startBtn) when button is clicked
+//set timer to 75 seconds
+var timeLeft = 75;
 
-startBtn.addEventListener("click", function () {
-  console.log("button clicked");
-});
+//display time in timeLeft element
+timerEl.textContent = timeLeft;
