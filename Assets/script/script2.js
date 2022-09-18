@@ -30,10 +30,6 @@ function startGame() {
       endGame();
     }
   }, 1000);
-
-  //display first question
-  displayQuestion(0);
-  displayAnswerChoices(0);
 }
 
 //end game function to stop timer and console log "game over"
@@ -41,25 +37,21 @@ function endGame() {
   console.log("game over");
 }
 
-//question object with question, answer choices, and correct answer
-var question1 = {
-  question: "What year did world war 2 start?",
-  choices: ["1939", "1940", "1941"],
-  answer: "1939",
-};
-
-//function to display question in questionEl
-function displayQuestion(questionNum) {
-  //get questionEl from html
-  var questionEl = document.getElementById("question");
-  //display question
-  questionEl.textContent = question1.question;
-}
-
-//function to display choices from question object in answers div
-function displayAnswerChoices(questionNum) {
-  //get answerChoicesEl from html
-  var answerChoicesEl = document.getElementById("answers");
-  //display answer choices
-  answerChoicesEl.textContent = question1.choices;
-}
+//create array of questions
+var questions = [
+  {
+    question: "What year did world war 2 start?",
+    answers: ["1938", "2012", "1939", "1776"],
+    correctAnswer: "1939    ",
+  },
+  {
+    question: "What country was not involved in world war 2?",
+    answers: ["Spain", "Germany", "Japan", "USA"],
+    correctAnswer: "Spain",
+  },
+  {
+    question: "What country did operation overlord take place in?",
+    answers: ["Portugal", "France", "Yugoslavia", "London"],
+    correctAnswer: "France",
+  },
+];
