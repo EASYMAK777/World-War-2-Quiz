@@ -83,3 +83,24 @@ for (i = 0; i < answerBtns.length; i++) {
     "btn-block"
   );
 }
+
+function checkAnswer() {
+  if (this.textContent === questions[0].correctAnswer) {
+    console.log("correct");
+    score++;
+    scoreEl.textContent = score;
+  } else {
+    console.log("wrong");
+    timeLeft -= 5;
+  }
+  questions.shift();
+  displayNextQuestion();
+}
+
+function displayNextQuestion() {
+  if (questions.length > 0) {
+    displayQuestion();
+  } else {
+    endGame();
+  }
+} //end of displayNextQuestion()
